@@ -5,7 +5,7 @@ namespace Imagify\Laravel;
 use Imagify\Optimizer;
 use Illuminate\Support\ServiceProvider;
 
-class ServiceProvider extends ServiceProvider
+class ImagifyServiceProvider extends ServiceProvider
 {
     /**
      * {@inheritDoc}

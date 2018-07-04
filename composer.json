@@ -20,7 +20,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Imagify\\Laravel\\ServiceProvider"
+                "Imagify\\Laravel\\ImagifyServiceProvider"
             ],
             "aliases": {
                 "Imagify": "Imagify\\Laravel\\Facade"
