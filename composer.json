@@ -16,6 +16,7 @@
     "autoload": {
         "psr-4": { "Imagify\\Laravel\\": "src/" }
     },
+    "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
