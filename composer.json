@@ -1,0 +1,29 @@
+{
+    "name": "renatomiguelsantos/imagify-laravel",
+    "description": "Laravel integration for the imagify.io API",
+    "keywords": ["imagify", "laravel", "images", "compression"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Renato Santos",
+            "email": "renato.miguel@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "wp-media/imagify-php": "^1.1"
+    },
+    "autoload": {
+        "psr-4": { "Imagify\\Laravel\\": "src/" }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Imagify\\Laravel\\ServiceProvider"
+            ],
+            "aliases": {
+                "Imagify": "Imagify\\Laravel\\Facade"
+            }
+        }
+    }
+}
