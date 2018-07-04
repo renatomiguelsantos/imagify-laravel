@@ -39,7 +39,7 @@ class ImagifyServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '../config/imagify.php' => config_path('imagify.php'),
+            __DIR__ . '/../config/imagify.php' => config_path('imagify.php'),
         ]);
     }
 }
