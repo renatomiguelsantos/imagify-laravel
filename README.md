@@ -20,3 +20,19 @@ php artisan vendor:publish --provider="Imagify\Laravel\ServiceProvider"
 ```
 
 And set an env variable `IMAGIFY_APIKEY` with your imagify.io api key.
+
+## Usage
+```php
+use Imagify;
+
+$handle = Imagify::optimize('path_to_image', [
+    'level' => 'ultra',
+    'resize' => [
+        'width' => '1560',
+    ],
+]);
+
+if (true === $handle->success) {
+    $contents = file_get_contents($handle->image);
+}
+```
